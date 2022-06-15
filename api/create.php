@@ -16,19 +16,9 @@
 	$data = json_decode(file_get_contents("php://input"));
 	
 	$mhs->nim = $data->nim;
-	$mhs->ktp = $data->ktp;
 	$mhs->nama = $data->nama;
-	$mhs->email = $data->email;
-	$mhs->tmplahir = $data->tmplahir;
-	$mhs->tgllahir = $data->tgllahir;
 	$mhs->alamat = $data->alamat;
 	$mhs->created = date('Y-m-d H:i:s');
-
-	// $peg->nama = $data->nama;
-	// $peg->email = $data->email;
-	// $peg->umur = $data->umur;
-	// $peg->jabatan = $data->jabatan;
-	// $peg->created = date('Y-m-d H:i:s');
 
 	if($mhs->tambahMahasiswa()){
 		echo json_encode('Tambah rekaman mahasiswa successfully.');

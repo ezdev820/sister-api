@@ -19,11 +19,7 @@
 		$mhsArr = array(
 		"id" => $mhs->id,
 		"nim" => $mhs->nim,
-		"ktp" => $mhs->ktp,
 		"nama" => $mhs->nama,
-		"email" => $mhs->email,
-		"tmplahir" => $mhs->tmplahir,
-		"tgllahir" => $mhs->tgllahir,
 		"alamat" => $mhs->alamat,
 		"created" => $mhs->created
 		);
